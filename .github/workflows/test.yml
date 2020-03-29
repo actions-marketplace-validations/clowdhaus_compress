@@ -1,7 +1,6 @@
-name: 'build-test'
+name: test
 
 on:
-  pull_request:
   push:
     branches:
       - master
@@ -10,14 +9,20 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
+      - name: Checkout
+        uses: actions/checkout@v2
+
       - run: |
           yarn
           yarn run all
   test:
-    runs-on: ubuntu-latest
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [windows-latest, ubuntu-latest]
     steps:
-      - uses: actions/checkout@v1
+      - name: Checkout
+        uses: actions/checkout@v2
+
       - uses: ./
-        with:
-          milliseconds: 1000
+
