@@ -1,7 +1,7 @@
 {
   "name": "compress",
   "version": "0.0.0",
-  "description": "Github action to compress executable binaries using upx ",
+  "description": "Github action to compress executables using upx",
   "repository": {
     "type": "git",
     "url": "git@github.com:clowdhaus/compress.git"
