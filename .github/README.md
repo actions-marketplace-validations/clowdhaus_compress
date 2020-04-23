@@ -9,6 +9,10 @@
   <img src="https://img.shields.io/badge/commitizen-friendly-brightgreen.svg" alt="Commitizen friendly">
   <img src="https://snyk.io/test/github/clowdhaus/compress/master/badge.svg" alt="Known Vulnerabilities">
 </p>
+<p align="center">
+  <img src="https://github.com/clowdhaus/compress/workflows/integration/badge.svg?branch=master" alt="integration">
+  <img src="https://github.com/clowdhaus/compress/workflows/test/badge.svg?branch=master" alt="test">
+</p>
 
 GitHub action to compress executables using `upx`.
 
