@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./compress.jpg" alt="aws-actions" height="196px">
+  <img src=".github/compress.jpg" alt="aws-actions" height="196px">
 </p>
 <h1 style="font-size: 56px; margin: 0; padding: 0;" align="center">
   compress
