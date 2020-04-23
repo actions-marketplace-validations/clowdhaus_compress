@@ -1,4 +1,4 @@
-name: 'Compress'
+name: 'Compress executables'
 author: 'Clowd Haus, LLC'
 description: 'Github action to compress 🗜️ executables'
 branding:

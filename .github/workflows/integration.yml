@@ -1,12 +1,11 @@
 name: integration
 
 on:
-  pull_request:
-    branches:
-      - master
   push:
     branches:
       - master
+    paths:
+      - 'dist/**'
 
 jobs:
   integration:

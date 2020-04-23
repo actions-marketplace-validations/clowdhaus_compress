@@ -4,10 +4,17 @@ on:
   pull_request:
     branches:
       - master
+    paths:
+      - 'dist/**'
+      - 'src/**'
+      - 'package.json'
   push:
     branches:
       - master
-
+    paths:
+      - 'dist/**'
+      - 'src/**'
+      - 'package.json'
 jobs:
   test:
     runs-on: ubuntu-latest

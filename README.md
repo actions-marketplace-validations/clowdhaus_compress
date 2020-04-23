@@ -7,12 +7,20 @@
 <p align="center">
   <img src="https://badgen.net/badge/TypeScript/strict%20%F0%9F%92%AA/blue" alt="Strict TypeScript">
   <img src="https://img.shields.io/badge/commitizen-friendly-brightgreen.svg" alt="Commitizen friendly">
-  <img src="https://snyk.io/test/github/clowdhaus/compress/master/badge.svg" alt="Known Vulnerabilities">
+  <a href="https://snyk.io/test/github/clowdhaus/compress">
+    <img src="https://snyk.io/test/github/clowdhaus/compress/badge.svg" alt="Known Vulnerabilities" data-canonical-src="https://snyk.io/test/github/clowdhaus/compress">
+  </a>
+  <a href="https://lgtm.com/projects/g/clowdhaus/compress/alerts/"><img alt="Total alerts" src="https://img.shields.io/lgtm/alerts/g/clowdhaus/compress.svg?logo=lgtm&logoWidth=18"/></a>
 </p>
 <p align="center">
-  <img src="https://github.com/clowdhaus/compress/workflows/integration/badge.svg?branch=master" alt="integration">
-  <img src="https://github.com/clowdhaus/compress/workflows/test/badge.svg?branch=master" alt="test">
+  <a href="https://github.com/clowdhaus/compress/actions?query=workflow%3Atest">
+    <img src="https://github.com/clowdhaus/compress/workflows/test/badge.svg?branch=master" alt="test">
+  </a>
+  <a href="https://github.com/clowdhaus/compress/actions?query=workflow%3Aintegration">
+    <img src="https://github.com/clowdhaus/compress/workflows/integration/badge.svg?branch=master" alt="integration">
+  </a>
 </p>
+
 
 GitHub action to compress executables using `upx`.
 
@@ -99,8 +107,8 @@ Once you have installed `yarn`, you can install the project dependencies by runn
 
 ## Contributing
 
-Please read [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) for details on our code of conduct and the process for submitting pull requests.
+Please read [CODE_OF_CONDUCT.md](.github/CODE_OF_CONDUCT.md) for details on our code of conduct and the process for submitting pull requests.
 
 ## Changelog
 
-Please see the [CHANGELOG.md](../CHANGELOG.md) for details on individual releases.
+Please see the [CHANGELOG.md](CHANGELOG.md) for details on individual releases.
