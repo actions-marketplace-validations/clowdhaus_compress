@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/clowdhaus/compress/compare/v1.0.0...v1.1.0) (2021-01-30)
+
+
+### Features
+
+* update dependencies to latest and recompile action ([da92807](https://github.com/clowdhaus/compress/commit/da92807e4dafba14845414465816d901af3f8293))
+
 # 1.0.0 (2020-04-23)
 
 
