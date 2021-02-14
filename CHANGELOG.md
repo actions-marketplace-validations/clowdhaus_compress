@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/clowdhaus/compress/compare/v1.1.0...v1.1.1) (2021-02-14)
+
+
+### Bug Fixes
+
+* rename `master` to `main` and update project dependencies ([6f7e7b7](https://github.com/clowdhaus/compress/commit/6f7e7b7b36a0f15fce3e515e7125fb63179c9e7d))
+
 # [1.1.0](https://github.com/clowdhaus/compress/compare/v1.0.0...v1.1.0) (2021-01-30)
 
 
