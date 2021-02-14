@@ -14,10 +14,10 @@
 </p>
 <p align="center">
   <a href="https://github.com/clowdhaus/compress/actions?query=workflow%3Atest">
-    <img src="https://github.com/clowdhaus/compress/workflows/test/badge.svg?branch=master" alt="test">
+    <img src="https://github.com/clowdhaus/compress/workflows/test/badge.svg?branch=main" alt="test">
   </a>
   <a href="https://github.com/clowdhaus/compress/actions?query=workflow%3Aintegration">
-    <img src="https://github.com/clowdhaus/compress/workflows/integration/badge.svg?branch=master" alt="integration">
+    <img src="https://github.com/clowdhaus/compress/workflows/integration/badge.svg?branch=main" alt="integration">
   </a>
 </p>
 

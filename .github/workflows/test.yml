@@ -3,14 +3,14 @@ name: test
 on:
   pull_request:
     branches:
-      - master
+      - main
     paths:
       - 'dist/**'
       - 'src/**'
       - 'package.json'
   push:
     branches:
-      - master
+      - main
     paths:
       - 'dist/**'
       - 'src/**'
