@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/clowdhaus/compress/compare/v1.1.1...v1.1.2) (2021-05-01)
+
+
+### Bug Fixes
+
+* **deps:** update dependencies to latest and re-compile action ([5186f96](https://github.com/clowdhaus/compress/commit/5186f967ddbcd889b991399a20ff476d6981bbc5))
+
 ## [1.1.1](https://github.com/clowdhaus/compress/compare/v1.1.0...v1.1.1) (2021-02-14)
 
 
