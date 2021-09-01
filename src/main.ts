@@ -1,7 +1,6 @@
 import * as core from '@actions/core'
-import stringArgv from 'string-argv'
-
 import Upx from './upx'
+import stringArgv from 'string-argv'
 
 async function run(): Promise<void> {
   try {

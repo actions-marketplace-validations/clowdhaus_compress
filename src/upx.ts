@@ -1,11 +1,11 @@
-import * as process from 'process'
-import * as io from '@actions/io'
 import * as core from '@actions/core'
 import * as exec from '@actions/exec'
-import * as tc from '@actions/tool-cache'
+import * as io from '@actions/io'
 import * as path from 'path'
-import download from 'download'
+import * as process from 'process'
+import * as tc from '@actions/tool-cache'
 import {Octokit} from '@octokit/rest'
+import download from 'download'
 
 const WORKSPACE = process.env.GITHUB_WORKSPACE as string
 const PLATFORM = process.platform
@@ -39,6 +39,7 @@ export default class Upx {
     try {
       return await Upx.get()
     } catch (error) {
+      // eslint-disable-next-line i18n-text/no-en
       core.debug(`Unable to find "upx" executable, installing it now. Reason: ${error}`)
       return await Upx.install()
     }
