@@ -1,65 +1,32 @@
 {
   "name": "compress",
   "version": "0.0.0",
+  "private": true,
   "description": "Github action to compress executables using upx",
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:clowdhaus/compress.git"
-  },
   "keywords": [
     "actions",
     "compress",
     "upx",
     "binary"
   ],
-  "author": "Clowd Haus, LLC",
-  "license": "Apache-2.0",
+  "homepage": "https://github.com/clowdhaus/compress#readme",
   "bugs": {
     "url": "https://github.com/clowdhaus/compress/issues"
   },
-  "homepage": "https://github.com/clowdhaus/compress#readme",
-  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:clowdhaus/compress.git"
+  },
+  "license": "Apache-2.0",
+  "author": "Clowd Haus, LLC",
   "main": "lib/main.js",
   "scripts": {
+    "all": "yarn run format && yarn run lint && yarn run compile",
+    "commit": "npx git-cz",
+    "compile": "tsc && ncc build -m",
     "format": "prettier --write **/*.ts",
     "lint": "eslint src/**/*.ts --quiet --fix",
-    "compile": "tsc && ncc build -m",
-    "commit": "npx git-cz",
-    "release": "semantic-release",
-    "all": "yarn run format && yarn run lint && yarn run compile"
-  },
-  "dependencies": {
-    "@actions/core": "^1.5.0",
-    "@actions/exec": "^1.1.0",
-    "@actions/io": "^1.1.1",
-    "@actions/tool-cache": "^1.7.1",
-    "@octokit/rest": "^18.10.0",
-    "download": "^8.0.0",
-    "string-argv": "^0.3.1"
-  },
-  "devDependencies": {
-    "@semantic-release/changelog": "^5.0.1",
-    "@semantic-release/git": "^9.0.0",
-    "@types/download": "^8.0.1",
-    "@typescript-eslint/eslint-plugin": "^4.30.0",
-    "@typescript-eslint/parser": "^4.30.0",
-    "@vercel/ncc": "^0.30.0",
-    "commitizen": "^4.2.4",
-    "cz-conventional-changelog": "^3.3.0",
-    "eslint": "^7.32.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-github": "^4.2.0",
-    "eslint-plugin-prettier": "^4.0.0",
-    "husky": "^7.0.2",
-    "lint-staged": "^11.1.2",
-    "prettier": "^2.3.2",
-    "semantic-release": "^17.4.7",
-    "typescript": "^4.4.2"
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
+    "release": "semantic-release"
   },
   "husky": {
     "hooks": {
@@ -71,6 +38,39 @@
       "eslint --fix",
       "git add"
     ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "dependencies": {
+    "@actions/core": "^1.6.0",
+    "@actions/exec": "^1.1.0",
+    "@actions/io": "^1.1.1",
+    "@actions/tool-cache": "^1.7.1",
+    "@octokit/rest": "^18.12.0",
+    "download": "^8.0.0",
+    "string-argv": "^0.3.1"
+  },
+  "devDependencies": {
+    "@semantic-release/changelog": "^6.0.1",
+    "@semantic-release/git": "^10.0.1",
+    "@types/download": "^8.0.1",
+    "@typescript-eslint/eslint-plugin": "^5.3.0",
+    "@typescript-eslint/parser": "^5.3.0",
+    "@vercel/ncc": "^0.31.1",
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^8.1.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-github": "^4.3.3",
+    "eslint-plugin-prettier": "^4.0.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^11.2.6",
+    "prettier": "^2.4.1",
+    "semantic-release": "^18.0.0",
+    "typescript": "^4.4.4"
   },
   "release": {
     "branches": [

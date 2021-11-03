@@ -19,7 +19,7 @@ async function run(): Promise<void> {
     const result = await upx.callStdout(args)
     core.setOutput('output', result)
   } catch (error) {
-    core.setFailed(error.message)
+    core.setFailed(JSON.stringify(error, null, 4))
   }
 }
 
