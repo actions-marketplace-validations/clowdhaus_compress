@@ -1,3 +1,12 @@
+## [1.1.5](https://github.com/clowdhaus/compress/compare/v1.1.4...v1.1.5) (2021-11-03)
+
+
+### Bug Fixes
+
+* **deps:** patch reported vulnerability with resolution and fix ci pipeline node version ([90e8e95](https://github.com/clowdhaus/compress/commit/90e8e95c1542f245b17002d286488afbb09840db))
+* **deps:** update dependencies to latest and re-compile action artifact ([9dc3aa5](https://github.com/clowdhaus/compress/commit/9dc3aa596c54e2f0b1459384a1fef5d9695cfbd7))
+* **deps:** update dependencies to latest to patch reported vulnerabilities ([cb64ad6](https://github.com/clowdhaus/compress/commit/cb64ad66e6b1fc1f3d7a478389004c10bf49924b))
+
 ## [1.1.4](https://github.com/clowdhaus/compress/compare/v1.1.3...v1.1.4) (2021-08-05)
 
 
